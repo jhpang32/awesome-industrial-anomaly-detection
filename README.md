@@ -73,7 +73,7 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
   - [3.6 Continual AD](#36-continual-ad)
   - [3.7 Uniform/Multi-Class AD](#37-uniformmulti-class-ad)
   - [3.8 Logical AD](#38-logical-ad)
-  - [3.9 VQA](#39-vqa)
+  - [3.9 MLLM-based AD](#39-mllm-based-ad)
   - [Other settings](#other-settings)
     - [TTT binary segmentation](#ttt-binary-segmentation)
     - [MoE with TTA](#moe-with-tta)
@@ -182,7 +182,7 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
 + PIRN: Prototypical-based Intra-modal Reconstruction with Normality Communication for Multi-modal Anomaly Detection [[ICLR 2026]](https://openreview.net/forum?id=7L7kmHHfgf)
 + Dual Distillation for Few-Shot Anomaly Detection [[ICLR 2026]](https://openreview.net/forum?id=tRO6G20Qba)
 + Judo: A Juxtaposed Domain-oriented Multimodal Reasoner for Industrial Anomaly QA [[ICLR 2026]](https://openreview.net/forum?id=XW4mROtaVb)
-
++ MRAD: Zero-Shot Anomaly Detection with Memory-Driven Retrieval [[ICLR 2026]](https://openreview.net/forum?id=TQkFiW3AEX)[[code]](https://github.com/CROVO1026/MRAD)
 
 ## AAAI 2026
 + Towards High-Resolution 3D Anomaly Detection: A Scalable Dataset and Real-Time Framework for Subtle Industrial Defects [[AAAI 2026 oral]](https://arxiv.org/abs/2507.07435)[[code]](https://hustcyq.github.io/MiniShift-Simple3D/)
@@ -841,6 +841,8 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
 + Supervised Anomaly Detection for Complex Industrial Images [[2024]](https://arxiv.org/abs/2405.04953)[[code]](https://github.com/abc-125/segad)
 + Small Object Few-shot Segmentation for Vision-based Industrial Inspection [[2024]](https://arxiv.org/abs/2407.21351)[[code]](https://github.com/zhangzilongc/SOFS)
 + SEM-CLIP: Precise Few-Shot Learning for Nanoscale Defect Detection in Scanning Electron Microscope Image [[2025]](https://arxiv.org/abs/2502.14884)
++ SynSur: An end-to-end generative pipeline for synthetic industrial surface defect generation and detection [[2025]](https://arxiv.org/abs/2604.26633)
+
 
 # 3 Other Research Direction
 
@@ -897,6 +899,9 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
 + AG-VAS: Anchor-Guided Zero-Shot Visual Anomaly Segmentation with Large Multimodal Models [[CVPR 2026]](https://arxiv.org/abs/2603.01305)[[code]](https://github.com/xiaozhen228/AG-VAS)
 + FB-CLIP: Fine-Grained Zero-Shot Anomaly Detection with Foreground-Background Disentanglement [[CVPR 2026]](https://arxiv.org/abs/2603.19608)[[code]](https://github.com/Xi-Mu-Yu/FB-CLIP)
 + From Attraction to Equilibrium: Physics-Inspired Semantic Gravitons for Zero-Shot Anomaly Detection [[CVPR 2026]](https://cvpr.thecvf.com/virtual/2026/poster/39782)
++ MRAD: Zero-Shot Anomaly Detection with Memory-Driven Retrieval [[ICLR 2026]](https://openreview.net/forum?id=TQkFiW3AEX)[[code]](https://github.com/CROVO1026/MRAD)
+
+
 ### Few-Shot AD
  + Learning unsupervised metaformer for anomaly detection [[ICCV 2021]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Learning_Unsupervised_Metaformer_for_Anomaly_Detection_ICCV_2021_paper.pdf)
  + Registration based few-shot anomaly detection [[ECCV 2022 oral]](https://arxiv.org/pdf/2207.07361.pdf)[[code]](https://github.com/MediaBrain-SJTU/RegAD)
@@ -1158,7 +1163,7 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
  + Uniad: Integrating geometric and semantic cues for unified anomaly detection [[ACM MM 2025]](https://dl.acm.org/doi/abs/10.1145/3746027.3755422)
  + Logical Anomaly Detection with Text-based Logic via Component-Aware Contrastive Language-Image Training [[KDD 25]](https://dl.acm.org/doi/abs/10.1145/3711896.3737032)
 
-## 3.9 VQA
+## 3.9 MLLM-based AD
 + AnomalyGPT: Detecting Industrial Anomalies using Large Vision-Language Models [[AAAI 2024]](https://arxiv.org/abs/2308.15366)[[code]](https://github.com/CASIA-IVA-Lab/AnomalyGPT)[[project page]](https://anomalygpt.github.io/)
 + Towards Generic Anomaly Detection and Understanding: Large-scale Visual-linguistic Model (GPT-4V) Takes the Lead [[2023]](https://arxiv.org/abs/2311.02782)[[code]](https://github.com/caoyunkang/GPT4V-for-Generic-Anomaly-Detection)
 + Exploring Grounding Potential of VQA-oriented GPT-4V for Zero-shot Anomaly Detection [[IJCAI WORKSHOP 2024]](https://arxiv.org/abs/2311.02612)[[code]](https://github.com/zhangzjn/GPT-4V-AD)
@@ -1188,6 +1193,8 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
 + IAD-Unify: A Region-Grounded Unified Model for Industrial Anomaly Segmentation, Understanding, and Generation [[2026]](https://arxiv.org/abs/2604.12440)
 + Reasoning-Driven Anomaly Detection and Localization with Image-Level Supervision [[CVPR 2026]](https://arxiv.org/abs/2603.27179)[[code]](https://github.com/YizhouJin313/ReADL)
 + MMR-AD: A Large-Scale Multimodal Dataset for Benchmarking General Anomaly Detection with Multimodal Large Language Models [[CVPR 2026]](https://arxiv.org/abs/2604.10971)[[code]](https://xcyao00.github.io/MMR-AD)
++ M3-AD: Reflection-aware Multi-modal, Multi-category, and Multi-dimensional
+Benchmark and Framework for Industrial Anomaly Detection [[2026]](https://arxiv.org/abs/2603.00055)[[code]](https://github.com/Yanhui-Lee/M3-AD)
 + AD-Copilot: A Vision-Language Assistant for Industrial Anomaly Detection via Visual In-context Comparison [[2026]](https://arxiv.org/pdf/2603.13779)[[Code]](https://github.com/jam-cc/AD-Copilot)[[Model]](https://huggingface.co/jiang-cc/AD-Copilot)[[Demo]](https://huggingface.co/spaces/jiang-cc/AD-Copilot)
 
 ## Other settings
@@ -1324,6 +1331,8 @@ A Survey on Industrial Anomalies Synthesis [[paper]](https://arxiv.org/abs/2502.
 + ADSeeker: A Knowledge-Grounded Reasoning Framework for Industry Anomaly Detection and Reasoning [[CVPR 2026]](https://arxiv.org/abs/2508.03088)
 + Omni-AD: A Large-scale and Versatile Benchmark for Industrial Anomaly Detection [[CVPR 2026]](https://cvpr.thecvf.com/virtual/2026/poster/39148)
 + Towards Open-Vocabulary Industrial Defect Understanding with a Large-Scale Multimodal Dataset [[CVPR 2026]](https://arxiv.org/abs/2512.24160)[[data]](https://ninaneon.github.io/projectpage)
++ M3-AD: Reflection-aware Multi-modal, Multi-category, and Multi-dimensional
+Benchmark and Framework for Industrial Anomaly Detection [[2026]](https://arxiv.org/abs/2603.00055)[[code]](https://github.com/Yanhui-Lee/M3-AD)
 
 
 ## BibTex Citation
